@@ -1,4 +1,7 @@
-# node-sanitize
+#(deprecated)!!! Use the sanitizer api 
+https://github.com/mikewest/sanitizer-playground
+
+# node-sanitize 
 Input sanitizing library for node.js
 
 # Summary
@@ -39,28 +42,32 @@ This will remove all keys from a plain object that are not `String`, `Integer`, 
 ## Express Middleware
 
 ### req.headerInt(headerName: String): Integer
-### req.headerString(headerName: String): String
+### req.headerString(headerName: String): String htmlEscaped
+### req.headerStringRaw(headerName: String): String unEscaped
 ### req.headerFloat(headerName: String): Float
 ### req.headerEmail(headerName: String): String
 ### req.headerPattern(headerName: String, pattern: RegExp): String
 ### req.headerOneOf(headerName: String, arr: Array): String
 
 ### req.bodyInt(bodyParam: String): Integer
-### req.bodyString(bodyParam: String): String
+### req.bodyString(bodyParam: String): String htmlEscaped
+### req.bodyStringRaw(bodyParam: String): String unEscaped
 ### req.bodyFloat(bodyParam: String): Float
 ### req.bodyEmail(bodyParam: String): String
 ### req.bodyPattern(bodyParam: String, pattern: RegExp): String
 ### req.bodyOneOf(bodyName: String, arr: Array): String
 
 ### req.queryInt(queryParam: String): Integer
-### req.queryString(queryParam: String): String
+### req.queryString(queryParam: String): String htmlEscaped
+### req.queryStringRaw(queryParam: String): String unEscaped
 ### req.queryFloat(queryParam: String): Float
 ### req.queryEmail(queryParam: String): String
 ### req.queryPattern(queryParam: String, pattern: RegExp): String
 ### req.queryOneOf(queryName: String, arr: Array): String
 
 ### req.paramInt(paramName: String): Integer
-### req.paramString(paramName: String): String
+### req.paramString(paramName: String): String htmlEscaped
+### req.paramStringRaw(paramName: String): String unEscaped
 ### req.paramFloat(paramName: String): Float
 ### req.paramEmail(paramName: String): String
 ### req.paramPattern(paramName: String, pattern: RegExp): String

@@ -1,4 +1,7 @@
-# node-sanitize
+#(deprecated)!!! Use the sanitizer api 
+https://github.com/mikewest/sanitizer-playground
+
+# node-sanitize 
 Input sanitizing library for node.js
 
 # Summary
